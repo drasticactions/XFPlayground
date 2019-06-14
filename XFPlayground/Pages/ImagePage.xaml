@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    x:Class="XFPlayground.Pages.ImagePage">
+    <ffimageloading:CachedImage   
+                    x:Name="CoverImage"
+                    Grid.Row="0"
+                    Aspect="AspectFit"
+                    Source="dri.png" 
+                    Margin="30">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:CircleTransformation />
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+</ContentPage>

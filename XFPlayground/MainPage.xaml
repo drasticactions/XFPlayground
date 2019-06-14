@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+                  xmlns:pages="clr-namespace:XFPlayground.Pages"
+                  xmlns:main="clr-namespace:XFPlayground" 
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  x:Class="XFPlayground.MainPage">
+    <MasterDetailPage.Master>
+        <main:MenuPage />
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <pages:TitlePage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
