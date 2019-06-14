@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Xamarin.Forms;
 
 namespace XFPlayground.ViewModels
 {
@@ -55,5 +56,21 @@ namespace XFPlayground.ViewModels
             changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+    }
+
+    public class ExtendedBindableObject : BindableObject
+    {
+        protected bool SetProperty<T>(ref T backingStore, T value, [CallerMemberName]string propertyName = "")
+        {
+            if (EqualityComparer<T>.Default.Equals(backingStore, value))
+            {
+                return false;
+            }
+
+            backingStore = value;
+            OnPropertyChanged(propertyName);
+
+            return true;
+        }
     }
 }
