@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+
 using LibVLCSharp.Shared;
 
 using Xamarin.Forms;
