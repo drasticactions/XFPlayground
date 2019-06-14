@@ -11,10 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.513437-nightly" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.521933-nightly" />
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="LibVLCSharp.Forms" Version="3.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />
