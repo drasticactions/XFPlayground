@@ -34,6 +34,16 @@ namespace XFPlayground.ViewModels
             return true;
         }
 
+        protected void Set<T>(string propertyName, ref T field, T value)
+        {
+            if (field == null && value != null || field != null && !field.Equals(value))
+            {
+                field = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+
         #region INotifyPropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string propertyName = "")

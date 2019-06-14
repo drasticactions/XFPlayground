@@ -35,6 +35,9 @@ namespace XFPlayground
                     case (int)MenuItemType.ImagePage:
                         MenuPages.Add(id, new NavigationPage(new ImagePage()));
                         break;
+                    case (int)MenuItemType.VideoPage:
+                        MenuPages.Add(id, new NavigationPage(new VideoPage()));
+                        break;
                 }
             }
 

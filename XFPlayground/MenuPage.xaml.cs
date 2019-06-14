@@ -7,7 +7,8 @@ namespace XFPlayground
     public enum MenuItemType
     {
         TitlePage,
-        ImagePage
+        ImagePage,
+        VideoPage
     }
     public class HomeMenuItem
     {
@@ -27,7 +28,8 @@ namespace XFPlayground
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.TitlePage, Title="Title" },
-                new HomeMenuItem {Id = MenuItemType.ImagePage, Title="Image" }
+                new HomeMenuItem {Id = MenuItemType.ImagePage, Title="Image" },
+                new HomeMenuItem {Id = MenuItemType.VideoPage, Title="Video" }
             };
 
             ListViewMenu.ItemsSource = menuItems;

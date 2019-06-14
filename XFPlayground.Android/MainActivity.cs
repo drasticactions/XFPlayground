@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using LibVLCSharp.Forms.Shared;
 
 namespace XFPlayground.Droid
 {
@@ -20,6 +21,7 @@ namespace XFPlayground.Droid
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            LibVLCSharpFormsRenderer.Init();
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(false);
             LoadApplication(new App());
