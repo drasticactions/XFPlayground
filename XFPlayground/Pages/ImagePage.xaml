@@ -10,7 +10,7 @@
                     Grid.Row="0"
                     Aspect="AspectFit"
                     Source="dri.png" 
-                    Margin="30">
+                    Margin="100">
                     <ffimageloading:CachedImage.Transformations>
                         <fftransformations:CircleTransformation />
                     </ffimageloading:CachedImage.Transformations>

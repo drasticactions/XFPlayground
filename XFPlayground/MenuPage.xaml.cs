@@ -8,6 +8,7 @@ namespace XFPlayground
     {
         TitlePage,
         ImagePage,
+        ImageComponentPage,
         VideoPage,
         VideoMosaicPage
     }
@@ -29,6 +30,7 @@ namespace XFPlayground
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.TitlePage, Title="Title" },
+                new HomeMenuItem {Id = MenuItemType.ImageComponentPage, Title="ImageComponent" },
                 new HomeMenuItem {Id = MenuItemType.ImagePage, Title="Image" },
                 new HomeMenuItem {Id = MenuItemType.VideoPage, Title="Video" },
                 new HomeMenuItem {Id = MenuItemType.VideoMosaicPage, Title="VideoMosaic" }
